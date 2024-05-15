@@ -22,7 +22,7 @@ RUN apk update && \
 RUN docker-php-ext-configure gd \
     --with-freetype \
     --with-jpeg \
-    && docker-php-ext-install -j$(nproc) gd pdo_mysql zip
+    && docker-php-ext-install -j$(nproc) gd pdo_mysql zip mbstring xml
 
 
 # Set permissions
