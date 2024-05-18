@@ -1,5 +1,5 @@
 # Use the official PHP Alpine Linux image as a parent image
-FROM php:alpine
+FROM php:8.3.7-fpm-alpine
 
 # Set working directory
 WORKDIR /var/www/html
@@ -22,7 +22,7 @@ RUN apk update && \
 RUN docker-php-ext-configure gd \
     --with-freetype \
     --with-jpeg \
-    && docker-php-ext-install -j$(nproc) gd pdo_mysql zip mbstring xml
+    && docker-php-ext-install -j$(nproc) gd pdo_mysql zip 
 
 
 # Set permissions
@@ -58,9 +58,9 @@ RUN composer dump-autoload --optimize
 
 
 # Expose port 9000 to communicate with Nginx or other web server
-# EXPOSE 9000
+EXPOSE 9000
 
 
 # Start PHP-FPM
-# CMD ["php-fpm", "-F"]
-CMD ["php", "artisan", "serve"]
+CMD ["php-fpm", "-F"]
+# CMD ["php", "artisan", "serve"]
