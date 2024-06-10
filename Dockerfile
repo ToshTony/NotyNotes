@@ -57,7 +57,7 @@ RUN composer dump-autoload --optimize
 
 
 # Expose port 9000 to communicate with Nginx or other web server
-EXPOSE 9000
+# EXPOSE 9000
 
 
 # Start PHP-FPM

@@ -5,3 +5,11 @@
  the current folder directory on the host machine.
  also explain why and how the volume defined in volumes 
  work and the relevance and what actually happens
+
+
+
+ in docker, 
+create env file
+chmod -R 775 storage 
+chown -R www-data:www-data storage
+php artisan key:generate
