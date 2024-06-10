@@ -56,7 +56,6 @@ RUN ls -la /var/www/html
 RUN composer dump-autoload --optimize
 
 
-
 # Expose port 9000 to communicate with Nginx or other web server
 EXPOSE 9000
 

@@ -1,0 +1,7 @@
+- Check on volumes on docker compose
+
+
+- explain why you added the named volume on each of the services instead of a . to represent
+ the current folder directory on the host machine.
+ also explain why and how the volume defined in volumes 
+ work and the relevance and what actually happens
