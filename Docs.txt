@@ -1,15 +1,12 @@
-- Check on volumes on docker compose
-
-
-- explain why you added the named volume on each of the services instead of a . to represent
- the current folder directory on the host machine.
- also explain why and how the volume defined in volumes 
- work and the relevance and what actually happens
-
-
 
  in docker, 
 create env file
 chmod -R 775 storage 
-chown -R www-data:www-data storage
+chown -R www-data:www-data storage database
 php artisan key:generate
+
+somewhere you will have to migrate and create db file
+
+
+- Find a way to make it all automated on docker,
+    check on entrypoint procedure.
