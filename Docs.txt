@@ -13,9 +13,6 @@ php artisan key:generate
 php artisan migrate
 chown -R www-data:www-data database
 
-somewhere you will have to migrate and create db file
-
-
 
 
 - Find a way to make it all automated on docker,
