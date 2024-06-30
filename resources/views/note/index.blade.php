@@ -2,6 +2,7 @@
     <div class="note-container">
         <a href=" {{ route('note.create') }} " class="new-note-btn">
            <h1>New Note heading</h1>
+           <p>a para for notes index view</p>
         </a>
         <div class="notes">
             @foreach($notes as $note)

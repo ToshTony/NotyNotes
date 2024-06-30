@@ -15,6 +15,10 @@ chown -R www-data:www-data database
 
 
 
+- seed db with data so you can see some notes on note.index view 
+
+
+
 - Find a way to make it all automated on docker,
     check on entrypoint procedure.
 
