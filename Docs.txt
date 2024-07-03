@@ -17,6 +17,17 @@ chown -R www-data:www-data database
 
 - seed db with data so you can see some notes on note.index view 
 
+#created a note factory
+#then to db seeder
+php artisan db:seed
+php artisan migrate --seed ...applies migrations and seeds the db
+
+
+php artisan make:controller acontrola --resource --model=amodel || generates controller and adds resource(crud functions)
+    and associated model
+
+on 46 minutes
+
 
 
 - Find a way to make it all automated on docker,
