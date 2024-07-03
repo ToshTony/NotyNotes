@@ -23,7 +23,6 @@ chown -R www-data:www-data database
     check on entrypoint procedure.
 
 
-- make a todo for project files
+- make a todo for project files .... meaning?
 
 
-- hello
