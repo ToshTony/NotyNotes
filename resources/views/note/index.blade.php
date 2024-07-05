@@ -2,7 +2,7 @@
     <div class="note-container">
         <!-- new note btn -->
         <a href=" {{ route('note.create') }} " class="new-note-btn">
-           <h1><b>New Note btn</b></h1>
+           <h1><b>New Note</b></h1>
         </a>
 
         <!-- note div -->
