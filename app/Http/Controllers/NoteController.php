@@ -42,7 +42,14 @@ class NoteController extends Controller
     public function show(Note $note)
     {
         //
-        return view('note.show', ['note' => $note]);
+        // return view('note.show', ['note' => $note]);
+        // dd($note);
+        if ($note->exists) {
+            return view('note.show', ['note' => $note]);
+        } else {
+            abort(404); // Or handle the case where note with given id is not found
+        }
+
     }
 
     /**

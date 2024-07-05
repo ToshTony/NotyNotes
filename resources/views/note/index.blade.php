@@ -1,31 +1,29 @@
 <x-layout>
-    <div class="note-container">
-        <!-- new note btn -->
-        <a href=" {{ route('note.create') }} " class="new-note-btn">
-           <h1><b>New Note</b></h1>
+<div class="note-container py-12">
+        <a href="{{ route('note.create') }}" class="new-note-btn">
+            New Note
         </a>
-
-        <!-- note div -->
         <div class="notes">
-            @foreach($notes as $note)
-            <!-- note body -->
-            <div class="note">
-                <div class="note-body">
-                    {{ Str::words($note-> note, 30) }}
+            @foreach ($notes as $note)
+                <div class="note">
+                    <div class="note-body">
+                        {{ Str::words($note->note, 30) }}
+                    </div>
+                    <div class="note-buttons">
+                        <a href="{{ route('note.show', $note) }}" class="note-edit-button">View</a>
+                        <a href="{{ route('note.edit', $note) }}" class="note-edit-button">Edit</a>
+                        <form action="{{ route('note.destroy', $note) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="note-delete-button">Delete</button>
+                        </form>
+                    </div>
                 </div>
-                <br>
-                <!-- note action buttons -->
-                <div class="note-buttons">
-                    <a href="{{ route('note.show', $note) }}" class="note-edit-button">View</a>
-                    <a href="{{ route('note.edit', $note) }}" class="note-edit-button">Edit</a>
-                    <button class="note-delete-button">Delete</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
             @endforeach
+        </div>
+
+        <div class="p-6">
+            {{ $notes->links() }}
         </div>
     </div>
 </x-layout>
