@@ -7,11 +7,13 @@ git config --global user.name "Tony"
  in docker, 
 create env file
 composer install
+npm install
 chmod -R 775 storage 
 chown -R www-data:www-data storage 
 php artisan key:generate
 php artisan migrate
 chown -R www-data:www-data database
+npm run dev
 
 
 
