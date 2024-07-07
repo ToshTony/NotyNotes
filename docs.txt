@@ -1,0 +1,44 @@
+https://www.youtube.com/watch?v=YdOI9O412BQ - strotelling
+https://www.youtube.com/watch?v=aolI_Rz0ZqY - Git
+
+Git Settings
+git config --global user.email "jayton006@gmail.com"
+git config --global user.name "Tony"
+
+
+
+ in docker, 
+create env file
+composer install
+npm install
+chmod -R 775 storage 
+chown -R www-data:www-data storage 
+php artisan key:generate
+php artisan migrate
+chown -R www-data:www-data database
+npm run dev
+
+
+
+- seed db with data so you can see some notes on note.index view 
+
+#created a note factory
+#then to db seeder
+php artisan db:seed
+php artisan migrate --seed ...applies migrations and seeds the db
+
+
+php artisan make:controller acontrola --resource --model=amodel || generates controller and adds resource(crud functions)
+    and associated model
+
+on 46 minutes
+
+
+
+- Find a way to make it all automated on docker,
+    check on entrypoint procedure.
+
+
+- make a todo for project files .... meaning?
+
+
