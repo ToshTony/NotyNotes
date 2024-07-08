@@ -1,4 +1,4 @@
-# Source Code for [Laravel 11 Crash Course](https://youtu.be/eUNWzJUvkCA)
+# Source Code for [NotyNotes](https://youtu.be/eUNWzJUvkCA)
 
 A simple personal notes manager application, inside which can register, login and create personal notes.
 
