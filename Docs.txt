@@ -5,6 +5,8 @@ git checkout "branchname"
 
 
 drive mount and remount options
+- for when the drive is mounted with read only options
+- this converts to read and write
 sudo mount -o remount,rw /media/user/26CE-3DC7
 
 
