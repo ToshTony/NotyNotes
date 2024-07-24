@@ -29,6 +29,8 @@ Route::post('/note', [NoteController::class, 'store'])->name('note.store');
 //get specific note by id ...view note
 Route::get('/note/{id}', [NoteController::class, 'show'])->name('note.show');
 
+
+
 //edit specific note by id
 Route::get('/note/{id}/edit', [NoteController::class, 'edit'])->name('note.edit');
 
