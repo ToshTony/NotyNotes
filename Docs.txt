@@ -41,6 +41,7 @@ on 46 minutes
 
 
 created new branch test.
+contains original project
 dockerizing it on test branch
 
 
