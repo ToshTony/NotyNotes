@@ -1,6 +1,8 @@
 https://www.youtube.com/watch?v=YdOI9O412BQ - strotelling
 https://www.youtube.com/watch?v=aolI_Rz0ZqY - Git
 
+
+
 Git Settings
 git config --global user.email "jayton006@gmail.com"
 git config --global user.name "Tony"
