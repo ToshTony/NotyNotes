@@ -59,14 +59,14 @@ dockerizing it on test branch
 theme links
 - keyword search - Business and corporate
 
-https://themewagon.github.io/mr-mrs/......mr and mrs
-https://themewagon.github.io/Rent4u/......rent 4u
-https://themewagon.github.io/fruitables/index.html......fruitables
-https://themewagon.github.io/VillaAgency/index.html......villa
-https://themewagon.github.io/HighTechIT/about.html.......hightech
+https://themewagon.github.io/mr-mrs/ ......mr and mrs
+https://themewagon.github.io/Rent4u/ ......rent 4u
+https://themewagon.github.io/fruitables/index.html ......fruitables
+https://themewagon.github.io/VillaAgency/index.html ......villa
+https://themewagon.github.io/HighTechIT/about.html .......hightech
 https://themewagon.github.io/notes-html-template/#about ...... notes
-https://themewagon.github.io/motiv#!.........motiv dashboard
-https://themewagon.github.io/MiniStore/..........ministore
+https://themewagon.github.io/motiv#! .........motiv dashboard
+https://themewagon.github.io/MiniStore/ .......... ministore
 
 
 other links
