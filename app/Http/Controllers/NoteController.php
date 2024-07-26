@@ -50,6 +50,10 @@ class NoteController extends Controller
             abort(404); // Or handle the case where note with given id is not found
         }
 
+        // $note = Note::findOrFail($note);
+        // dd($note);
+        // return view('note.show', compact('note'));
+
     }
 
     /**

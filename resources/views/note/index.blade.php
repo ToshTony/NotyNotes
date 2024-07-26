@@ -11,6 +11,7 @@
                     </div>
                     <div class="note-buttons">
                         <!-- route binding exceptions -->
+                        <!-- passes an instance of the note model, used in the routes also -->
                         <a href="{{ route('note.show', $note) }}" class="note-edit-button">View</a>
                         <a href="{{ route('note.edit', $note) }}" class="note-edit-button">Edit</a>
                         <form action="{{ route('note.destroy', $note) }}" method="POST">

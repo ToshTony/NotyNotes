@@ -27,7 +27,7 @@ Route::get('/note/create', [NoteController::class, 'create'])->name('note.create
 Route::post('/note', [NoteController::class, 'store'])->name('note.store');
 
 //get specific note by id ...view note
-Route::get('/note/{id}', [NoteController::class, 'show'])->name('note.show');
+Route::get('/note/{note}', [NoteController::class, 'show'])->name('note.show');
 
 
 
