@@ -67,3 +67,9 @@ https://themewagon.github.io/HighTechIT/about.html.......hightech
 https://themewagon.github.io/notes-html-template/#about ...... notes
 https://themewagon.github.io/motiv#!.........motiv dashboard
 https://themewagon.github.io/MiniStore/..........ministore
+
+
+other links
+https://www.youtube.com/watch?v=YdOI9O412BQ - strotelling
+https://www.youtube.com/watch?v=aolI_Rz0ZqY - Git
+
