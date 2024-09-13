@@ -7,12 +7,14 @@
              <!-- human readable, created xx minutes ago -->
              <h1 class="text-3xl py-4">Note Created at: {{ $note->created_at->diffForHumans()}}</h1>
 
-             <p>Current date and time: {{ date('Y-m-d H:i:s') }}</p>
+            <div>
+                <p>Current date and time: {{ date('Y-m-d H:i:s') }}</p>
 
-             <p>12Created At: {{ $note->created_at->format('l, F j, Y \a\t g:i A') }}</p>
+                <p>12->Created At: {{ $note->created_at->format('l, F j, Y \a\t g:i A') }}</p>
 
-             <p>24Created At: {{ $note->created_at->format('l, F j, Y \a\t H:i') }}</p>
+                <p>24->Created At: {{ $note->created_at->format('l, F j, Y \a\t H:i') }}</p>
 
+            </div>
 
             @php
                 $userTimezone = 'America/New_York'; // Example timezone
