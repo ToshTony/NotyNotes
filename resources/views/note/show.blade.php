@@ -1,4 +1,4 @@
-<x-layout>
+<x-app-layout>
     <div class="note-container single-note">
         <div class="note-header">
             <!-- normal date -->
@@ -25,7 +25,7 @@
             <div class="note-buttons">
                 <a href="{{ route('note.show', $note) }}" class="note-edit-button">View</a>
                 <a href="{{ route('note.edit', $note) }}" class="note-edit-button">Edit</a>
-                <form action="{{ route('note.destroy', ['id' => $note->id]) }}" method="POST">
+                <form action="{{ route('note.destroy', $note) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button class="note-delete-button">Delete</button>
@@ -38,4 +38,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-app-layout>

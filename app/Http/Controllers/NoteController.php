@@ -14,7 +14,6 @@ class NoteController extends Controller
     {
         //
         $notes = Note::query()->orderBy('created_at', 'desc')->paginate();
-       
         return view('note.index', ['notes' => $notes]);
     }
 
@@ -33,6 +32,7 @@ class NoteController extends Controller
     public function store(Request $request)
     {
         //
+        // dd($request);
         $data = $request->validate([
             'note' => ['required', 'string']
         ]);
@@ -79,6 +79,12 @@ class NoteController extends Controller
     public function update(Request $request, Note $note)
     {
         //
+        $data = $request->validate([
+            'note' => ['required', 'string']
+        ]);
+
+        $note->update($data);
+        return to_route('note.show', $note)->with('message', 'Note was Updated');
     }
 
     /**
@@ -87,5 +93,7 @@ class NoteController extends Controller
     public function destroy(Note $note)
     {
         //
+        $note->delete();
+        return to_route('note.index')->with('message', 'Note was Deleted!');
     }
 }
